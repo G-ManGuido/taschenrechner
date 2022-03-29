@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Calculator";
+  src: url(../fonts/Calculator.ttf);
+}
+body {
+  background: #cdcdcd;
+}
+
+.calculator {
+  width: 300px;
+  background: #666666;
+  margin: 5% auto;
+  padding: 2rem;
+  border: 2px solid #555;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #ccc;
+}
+
+.calculatorBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+#resultContainer {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  text-align: end;
+  background: #000;
+  grid-column: 1/5;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #777;
+  border-right: 1px solid #777;
+  border-radius: 8px;
+}
+
+#result {
+  width: 90%;
+  padding: 4px 8px;
+  color: #00ffbf;
+  background: #111;
+  font-family: "Calculator";
+  font-size: 2.5rem;
+  margin: 4px auto;
+  text-shadow: 0 0 4px #cdcdcd;
+}
+
+#clear {
+  grid-column: 1/2;
+  background: #333;
+  border: 1px solid #323232;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.operator {
+  background: #ffa947;
+  color: #111;
+  border: 1px solid #666;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.operator:hover {
+  background: #ff9216;
+}
+
+button {
+  height: 32px;
+  background: #555;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: #fff;
+  box-shadow: 1px 1px 4px #333;
+}
+
+button:hover {
+  background: #4e4e4e;
+  box-shadow: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.6rem;
+  color: #666;
+}
+footer p {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+footer a {
+  text-decoration: none;
+  color: #666;
+}
+footer a:hover {
+  color: #ff2600;
+}/*# sourceMappingURL=main.css.map */
