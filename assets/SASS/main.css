@@ -6,6 +6,13 @@ body {
   background: #cdcdcd;
 }
 
+h1 {
+  font-size: 0.8rem;
+  margin-top: -1rem;
+  color: #333;
+  border-bottom: 1px solid #444;
+}
+
 .calculator {
   width: 300px;
   background: #666666;
