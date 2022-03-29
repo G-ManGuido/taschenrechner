@@ -2,6 +2,18 @@
     font-family: 'Calculator';
     src: url(../fonts/Calculator.ttf);
 }
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url(../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url(../fonts/Poppins-Black.ttf);
+}
 body{
     background: #cdcdcd;
 }
@@ -13,7 +25,7 @@ h1{
 }
 .calculator {
     width: 300px;
-    background: #666666;
+    background: linear-gradient(45deg, #666666, #555555);
     margin: 10% auto;
     padding: 2rem;
     border: 2px solid #555;
@@ -55,14 +67,17 @@ h1{
     background: #333;
     border: 1px solid #323232;
     border-radius: 4px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Poppins-Black';
 }
-.operator {
+.operator{
 background: rgb(255, 169, 71);
 color: #111;
 border: 1px solid #666;
 border-radius: 4px;
-font-size: 1.5rem;
+font-size: 1.3rem;
+font-weight: bold;
 margin-left: 1.5rem;
 }
 .operator:hover {
@@ -78,6 +93,7 @@ button {
     font-size: 1.2rem;
     color: #fff;
     box-shadow: 1px 1px 4px #333;
+    font-family: 'OpenSans';
 }
 button:hover {
     background: rgb(78, 78, 78);
@@ -90,6 +106,7 @@ footer{
     right: 0.5rem;
     font-size: 0.6rem;
     color: #666;
+    font-family: 'OpenSansItalic';
 
     p{
         padding: 0;
