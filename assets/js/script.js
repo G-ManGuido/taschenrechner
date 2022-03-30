@@ -9,10 +9,10 @@ let interimResult = "" // zwischenergebnis
 let currentOperator = ""
 let savedResultToInterim = false
 
-function calculateNewResult () {
+function calculateNewResult() {
     const resultNr = parseFloat(result)
     const interimResultNr = parseFloat(interimResult)
-    switch(currentOperator) {
+    switch (currentOperator) {
         case "+":
             return interimResultNr + resultNr;
         case "–":
@@ -34,11 +34,11 @@ function updateResultView() {
 //=== set up
 // number buttons konfigurieren
 const numbers = document.getElementsByClassName("number")
-for(let numberButton of numbers) {
+for (let numberButton of numbers) {
     numberButton.addEventListener("click", () => {
         const numberString = numberButton.textContent
 
-        if(result === "0" || savedResultToInterim) {
+        if (result === "0" || savedResultToInterim) {
             // einfach die zahl übernehmen
             result = numberString
             savedResultToInterim = false
@@ -54,7 +54,7 @@ for(let numberButton of numbers) {
 // comma button konfigurieren
 document.getElementById("comma").addEventListener("click", () => {
     const resultHatBereitsEinComma = result.includes(".")
-    if(!resultHatBereitsEinComma) {
+    if (!resultHatBereitsEinComma) {
         result += "."
         updateResultView()
     }
@@ -70,16 +70,16 @@ document.getElementById("clear").addEventListener("click", () => {
 
 // configure operators
 const operators = document.getElementsByClassName("operator")
-for(let operator of operators) {
+for (let operator of operators) {
     operator.addEventListener("click", () => {
         savedResultToInterim = true
-        if(operator.textContent === "=") {
+        if (operator.textContent === "=") {
             result = calculateNewResult() + ""
             // reset interim result and operator...
             interimResult = ""
             currentOperator = ""
         } else {
-            if(interimResult) {
+            if (interimResult) {
                 // zwischenergbenis exisitiert bereits,
                 // es wurde aber ein operator geklickt...
                 // -> zwischenergebnis muss calculiert werden...
