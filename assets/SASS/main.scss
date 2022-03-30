@@ -60,6 +60,7 @@ h1{
     font-size: 2.5rem;
     margin: 4px auto;
     text-shadow: 0 0 4px #cdcdcd;
+    overflow: hidden;
 }
 
 #clear{
@@ -98,6 +99,8 @@ button {
 button:hover {
     background: rgb(78, 78, 78);
     box-shadow: none;
+    border:1px solid #222;
+    transition: all 0.5s ease-out;
 }
 
 footer{
